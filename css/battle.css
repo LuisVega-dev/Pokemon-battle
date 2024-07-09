@@ -1,0 +1,354 @@
+:root {
+    --font-family: 'Clash Display', sans-serif;
+    --name-pokemone: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.battleground {
+    display: flex;
+    justify-content: center;
+    margin-top: 57.21px;
+}
+
+.battleground span{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 8.357vw;
+    color: #FFFFFF;
+}
+
+/* Battlepokemons */
+
+.container-battlepokemons {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-battlepokemons .blastoise {
+    background-image: url(/img/background-blastoise.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    width: 46.5vw;
+    height: 76.6vh;
+    background-size: cover;
+    background-position: center
+}
+
+.container-battlepokemons .battlepokemons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.536vw;
+    height: 8.722vh;
+    background: #23232399;
+    border-radius: 11.44px;
+}
+
+.vs span {
+    font-family: var(--font-family);
+    font-size: 3.3vw;
+    font-weight: 500;
+    color: #757575;
+}
+
+.container-battlepokemons .charizard {
+    background-image: url(/img/background-charizard.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 46.5vw;
+    height: 76.6vh;
+    background-size: cover;
+    background-position: center
+}
+
+/* Player 1 */
+
+.container-battlepokemons .gamer-life {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-battlepokemons .player-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 30.03px;
+    width: 50%;
+}
+
+.container-battlepokemons .name-img-player-1{
+    display: flex;
+    align-items: center;
+    gap: 11.44px;
+    width: 50%;
+}
+
+.container-battlepokemons .img-player {
+    width: 7.44vw;
+}
+
+.life-meter-1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 3.72vw;
+    position: relative;
+    top: -9vw;
+    transition: 1s ease all;
+}
+
+.container-battlepokemons .player-1 .name-player-1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 2.79vw;
+    color: #FFFFFF;
+}
+
+.container-battlepokemons .life-percentage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -8vw;
+    margin-left: -18px;
+}
+
+/* Player 2 */
+
+.container-battlepokemons .player-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 18.59px;
+}
+
+.container-battlepokemons .player-2 .name-img-player-2 {
+    display: flex;
+    align-items: center;
+    gap: 11.44px;
+}
+
+.container-battlepokemons .player-2 span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 3.72vw;
+}
+
+.life-meter {
+    position: relative;
+    top: -9vw;
+    transition: 1s ease all;
+}
+
+.container-battlepokemons .life-percentage-1 {
+    margin-top: -8vw;
+}
+
+.container-battlepokemons .life-percentage-1 img {
+    margin-right: -90px;
+    position: relative;
+    right: -24%;
+}
+
+/* Line */
+.line {
+    display: flex;
+    background-image: url(/img/Line-1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2.7vw;
+    margin-top: -25.33px;
+    margin-bottom: 45.77px;
+}
+
+/* pokemos attack */
+
+.container-pokemon-attack .title-attack {
+    text-align: center;
+}
+
+.attacks-pokemon {
+    display: flex;
+    flex-direction: column;
+    gap: 45.77px;
+}
+
+.container-pokemon-attack .title-attack {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 5.58vw;
+}
+
+.container-pokemon-attack .attack-1 {
+    background-color: #222222;
+    border-radius: 17.16px;
+    width: 43.01vw;
+    height: 38.13vw;
+    text-align: center;
+    transition: .3s ease all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pokemon-attack .attacks-1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px
+}
+
+.container-pokemon-attack .text-attack-1{
+    font-family: var(--font-family);
+    font-size: 3.69vw;
+    font-weight: 600;
+    position: relative;
+    top: -2vw;
+    color: white;
+}
+
+.container-pokemon-attack .img-attack-1 {
+    position: relative;
+    top: -8.1vw;
+}
+
+.container-pokemon-attack .attack-2 {
+    background-color: #222222;
+    border-radius: 17.16px;
+    width: 43.01vw;
+    height: 38.13vw;
+    text-align: center;
+    transition: .3s ease all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pokemon-attack .attack-2 .img-attack-2 {
+    position: relative;
+    top: -6.8vw;
+}
+
+.container-pokemon-attack .attack-2 .text-attack-2 {
+    font-family: var(--font-family);
+    font-size: 3.69vw;
+    font-weight: 600;
+    position: relative;
+    top: -8vw;
+    color: white;
+}
+
+
+.container-pokemon-attack .damage {
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+.container-pokemon-attack .top-2 {
+    position: relative;
+    top: -6.4vw;
+}
+
+.container-pokemon-attack .attacks-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-pokemon-attack .attack-3 {
+    background-color: #222222;
+    border-radius: 17.16px;
+    width: 43.01vw;
+    height: 38.13vw;
+    text-align: center;
+    transition: .3s ease all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pokemon-attack .attack-3 .text-attack-3 {
+    font-family: var(--font-family);
+    font-size: 3.69vw;
+    font-weight: 600;
+    position: relative;
+    top: -2vw;
+    color: white;
+}
+
+.container-pokemon-attack .img-attack-3 {
+    position: relative;
+    top: -8.1vw;
+}
+
+.container-pokemon-attack .top-3 {
+    position: relative;
+    top: -1vw;
+}
+
+.container-pokemon-attack .attack-4 {
+    background-color: #222222;
+    border-radius: 17.16px;
+    width: 43.01vw;
+    height: 38.13vw;
+    text-align: center;
+    transition: .3s ease all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pokemon-attack .img-attack-4 {
+    position: relative;
+    top: -5.5vw;
+}
+
+.container-pokemon-attack .attack-4 .text-attack-4 {
+    font-family: var(--font-family);
+    font-size: 3.69vw;
+    font-weight: 600;
+    position: relative;
+    top: -2vw;
+    color: white;
+}
+
+.container-pokemon-attack .top-4 {
+    position: relative;
+    top: -1.5vw;
+}
+
+.container-pokemon-attack .attack-hover:hover {
+    background-color: #FFE4DD;
+    border: 2.86px solid #FF4210;
+    color: #FF4210;
+}

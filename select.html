@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select-Pokemon</title>
+    <link rel="stylesheet" href="./css/select.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="back">
+            <img src="./img/arrow_back_ios_black_24dp (1) 1.svg" width="23.92px">
+        </div>
+        <div class="user">
+            <img src="./img/User.svg" width="47.86px">
+        </div>
+    </div>
+
+    <!-- Select Pokemones -->
+    <div class="container-select">
+        <div class="container-pokemons">
+            <div class="pokemons">
+                <div class="poke-charizard">
+                    <div class="container-img">
+                        <img src="./img/charizard-1.svg" width="100%" class="img-charizard">
+                    </div>
+                    <div class="name-poke">
+                        <div class="container-name-type">
+                            <div class="name-type">
+                                <span class="name-background">Charizard</span>
+                                <span class="type-charizard"><img src="./img/fire.svg" width="15.94px"> Fire</span>
+                            </div>
+                        </div>
+                        <div class="container-description-charizard">
+                            <p class="description-charizard">Charizard is known for its dragon-like appearance, with a large wingspan and a long, pointed tail. He is capable of using powerful Fire-type attacks as well as Flying-type moves.</p>
+                            <p class="stats-charizard">View Stats</p>
+                        </div>
+                        <div class="container-arrows">
+                            <div class="arrow-left arrows">
+                                <img class="arrow-left-img" src="./img/arrow-left.svg" width="39.86px">
+                            </div>
+                            <div class="swipe-up_container">
+                                <div class="swipe-up">
+                                    <img src="./img/arrow-swipe.svg" width="31.89px" height="79.72px">
+                                    <img src="./img/poke-ball.svg">
+                                </div>
+                                <span class="swipe-text">Swipe up to select</span>
+                                <button class="cta"><span>Go to battle</span>
+                            </div>
+                            <div class="arrow-right arrows">
+                                <img class="arrow-right-img" src="./img/Arrow-right.svg" width="39.86px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const button_back = document.querySelector('.back');
+
+        button_back.addEventListener('click', () => {
+            window.location.href = '/index.html';
+        });
+
+        const button_next = document.querySelector('.cta');
+
+        button_next.addEventListener('click', () => {
+            window.location.href = '/battle.html'
+        });
+    </script>
+</body>
+</html>
